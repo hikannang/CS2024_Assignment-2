@@ -1,0 +1,17 @@
+body {
+    background-color: #5f95cb;
+}
+
+#repeat {
+    width: 100%;
+}
+
+.header-logo {
+    height: 40px;
+}
+
+.nav-link {
+    color:#8b4513 !important;
+    font-weight: bold;
+    margin-left: 15px;
+}
