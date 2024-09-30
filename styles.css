@@ -1,17 +1,110 @@
 body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
     background-color: #5f95cb;
+    display: flex;
+    flex-direction: column;
 }
 
-#repeat {
+header {
     width: 100%;
+    background-color: #f8f9fa; /* Matches the bg-light class in Bootstrap */
+    padding: 10px 0; /* Consistent padding */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
 .header-logo {
-    height: 40px;
+    width: auto;
+    height: 45px;
+    margin-right: 20px; /* Space between logo and navbar */
+}
+
+.navbar {
+    flex-grow: 1; /* Allows navbar to take up remaining space */
+    display: flex;
+    justify-content: flex-start; /* Align navbar items to the left */
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0; /* Remove default margin */
+    padding-left: 0; /* Remove default padding */
+}
+
+.nav-item {
+    list-style: none; /* Remove bullet points */
 }
 
 .nav-link {
-    color:#8b4513 !important;
+    color: #8b4513;
     font-weight: bold;
-    margin-left: 15px;
+    margin-left: 30px;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Push icons to the right */
+}
+
+.social-icons a {
+    background-color: #f0f0f0; /* Background color for icons */
+    border-radius: 50%; /* Circular background */
+    padding: 8px; /* Padding around icons */
+    margin-left: 12%; /* Space between icons */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-icons a:hover {
+    background-color: #e0e0e0; /* Hover color */
+}
+
+.social-icons img {
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav-link {
+        margin-left: 0; /* Remove left margin for vertical alignment */
+        margin-bottom: 10px; /* Add space between links */
+    }
+}
+
+h2 {
+    color: #fff; /* Header text color */
+    text-align: center;
+}
+
+p {
+    color: #ddd; /* Paragraph text color */
+}
+
+img {
+    width: 50px; /* Adjust icon size as needed */
+    height: auto;
+}
+
+.btn-primary {
+    background-color: #5f95cb;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #4a7aa4;
 }
