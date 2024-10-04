@@ -1,11 +1,14 @@
+/* General Styles */
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
-    background-color: #5f95cb;
+    background-color: #8FAADC; /* From Contact Us */
+    color: #333; /* From Contact Us */
     display: flex;
     flex-direction: column;
 }
 
+/* Header Styles */
 header {
     width: 100%;
     background-color: #f8f9fa; /* Matches the bg-light class in Bootstrap */
@@ -21,7 +24,7 @@ header {
 
 .header-logo {
     width: auto;
-    height: 45px;
+    height: 50px; /* From Contact Us */
     margin-right: 20px; /* Space between logo and navbar */
 }
 
@@ -71,9 +74,93 @@ header {
 .social-icons img {
     width: 24px; /* Icon size */
     height: 24px; /* Icon size */
+    margin-right: 12px; /* Align with Contact Us */
 }
 
-/* Media Queries for Responsive Design */
+.table {
+    width: 100%;
+    margin-bottom: 40px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: transparent;
+}
+
+/* Contact Us Specific Styles */
+.contact-section {
+    padding: 20px
+}
+
+.footer {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 40px;
+    color: #333;
+}
+
+.rounded-table, 
+.rounded-table .col-md-6 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.transparent-table {
+    background-color: transparent;
+}
+
+.align-middle {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.contact-left {
+    text-align: left;
+}
+
+.contact-middle {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.contact-right {
+    text-align: right;
+}
+
+.w-50 {
+    width:50%;
+}
+
+.h-100 {
+    height: auto;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .navbar-nav {
         flex-direction: column; /* Stack items vertically on smaller screens */
@@ -86,20 +173,7 @@ header {
     }
 }
 
-h2 {
-    color: #fff; /* Header text color */
-    text-align: center;
-}
-
-p {
-    color: #ddd; /* Paragraph text color */
-}
-
-img {
-    width: 50px; /* Adjust icon size as needed */
-    height: auto;
-}
-
+/* Additional Button Styles */
 .btn-primary {
     background-color: #5f95cb;
     border: none;
@@ -107,4 +181,26 @@ img {
 
 .btn-primary:hover {
     background-color: #4a7aa4;
+}
+
+.pill-button {
+    border-radius: 50px; /* Makes the button pill-shaped */
+    padding: 10px 20px; /* Adjusts padding for better shape */
+    transition: background-color 0.3s ease; /* Adds smooth transition for color change */
+}
+
+.pill-button:hover {
+    background-color: #0056b3; /* Change this to your desired hover color */
+}
+
+h1, h3 {
+    margin-bottom: 20px;
+}
+
+p, address {
+    margin-bottom: 10px;
+}
+
+iframe {
+    border-radius: 10px;
 }
