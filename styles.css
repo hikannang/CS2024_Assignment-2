@@ -100,6 +100,16 @@ img {
     height: auto;
 }
 
+#img-footer {
+    width: 100px; /* Adjust icon size as needed */
+    height: auto;
+}
+
+#img-award {
+    width: 150px; /* Adjust icon size as needed */
+    height: auto;
+}
+
 .btn-primary {
     background-color: #5f95cb;
     border: none;
