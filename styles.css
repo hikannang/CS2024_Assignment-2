@@ -2,139 +2,76 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
-    background-color: #8FAADC; /* From Contact Us */
-    color: #333; /* From Contact Us */
-    display: flex;
-    flex-direction: column;
+    background-color: #8FAADC;
+    color: #333;
 }
 
 /* Header Styles */
 header {
-    width: 100%;
-    background-color: #f8f9fa; /* Matches the bg-light class in Bootstrap */
-    padding: 10px 0; /* Consistent padding */
+    background-color: #f8f9fa;
+    padding: 10px 0;
 }
 
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 .header-logo {
-    width: auto;
-    height: 50px; /* From Contact Us */
-    margin-right: 20px; /* Space between logo and navbar */
-}
-
-.navbar {
-    flex-grow: 1; /* Allows navbar to take up remaining space */
-    display: flex;
-    justify-content: flex-start; /* Align navbar items to the left */
+    height: 50px;
+    margin-right: 20px;
 }
 
 .navbar-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 0; /* Remove default margin */
-    padding-left: 0; /* Remove default padding */
-}
-
-.nav-item {
-    list-style: none; /* Remove bullet points */
+    margin-bottom: 0;
 }
 
 .nav-link {
     color: #8b4513;
     font-weight: bold;
     margin-left: 30px;
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none;
 }
 
 .social-icons {
     display: flex;
     align-items: center;
-    margin-left: 20px; /* Push icons to the right */
 }
 
 .social-icons a {
-    background-color: #f0f0f0; /* Background color for icons */
-    border-radius: 50%; /* Circular background */
-    padding: 8px; /* Padding around icons */
-    margin-left: 12%; /* Space between icons */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    padding: 8px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
 }
 
 .social-icons a:hover {
-    background-color: #e0e0e0; /* Hover color */
+    background-color: #e0e0e0;
 }
 
 .social-icons img {
-    width: 24px; /* Icon size */
-    height: 24px; /* Icon size */
-    margin-right: 12px; /* Align with Contact Us */
-}
-
-.table {
-    width: 100%;
-    margin-bottom: 40px;
-    border-collapse: separate;
-    border-spacing: 0;
-    background-color: transparent;
+    width: 24px;
+    height: 24px;
 }
 
 /* Contact Us Specific Styles */
 .contact-section {
-    padding: 20px
+    width: 100%;
+    padding: 2.5%;
 }
 
-.footer {
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
-    margin-top: 40px;
-    color: #333;
-}
-
-.rounded-table, 
-.rounded-table .col-md-6 {
+.content-box {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 20px;
-}
-
-.transparent-table {
-    background-color: transparent;
-}
-
-.align-middle {
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
-}
-
-.contact-left {
-    text-align: left;
-}
-
-.contact-middle {
-    text-align: center;
-    vertical-align: middle;
-}
-
-.contact-right {
-    text-align: right;
-}
-
-.w-50 {
-    width:50%;
-}
-
-.h-100 {
-    height: auto;
+    margin: 10px;
+    border: 2px solid #5f95cb; /* More prominent border */
 }
 
 .icon {
@@ -144,36 +81,39 @@ header {
     vertical-align: middle;
 }
 
-.d-flex {
-    display: flex;
+h1, h3 {
+    margin-bottom: 20px;
 }
 
-.flex-column{
-    flex-direction: column;
+h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
 }
 
-.justify-content-center {
-    justify-content: center;
+iframe {
+    border-radius: 10px;
 }
 
-.align-items-center {
-    align-items: center;
+/* Placeholder Text Styling */
+::placeholder {
+    color: #999; /* Less prominent placeholder text color */
+    opacity: 1; /* Ensures consistent styling across browsers */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar-nav {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: flex-start; /* Align items to the start */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .nav-link {
-        margin-left: 0; /* Remove left margin for vertical alignment */
-        margin-bottom: 10px; /* Add space between links */
+        margin-left: 0;
+        margin-bottom: 10px;
     }
 }
 
-/* Additional Button Styles */
+/* Button Styles */
 .btn-primary {
     background-color: #5f95cb;
     border: none;
@@ -183,24 +123,10 @@ header {
     background-color: #4a7aa4;
 }
 
-.pill-button {
-    border-radius: 50px; /* Makes the button pill-shaped */
-    padding: 10px 20px; /* Adjusts padding for better shape */
-    transition: background-color 0.3s ease; /* Adds smooth transition for color change */
-}
-
-.pill-button:hover {
-    background-color: #0056b3; /* Change this to your desired hover color */
-}
-
-h1, h3 {
-    margin-bottom: 20px;
-}
-
-p, address {
-    margin-bottom: 10px;
-}
-
-iframe {
-    border-radius: 10px;
+/* Footer Styles */
+.footer {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 40px;
+    color: #333;
 }

@@ -40,69 +40,82 @@
     </div>
 </header>
      
-<main class="container contact-section">
+<main class="contact-section">
     <!-- Contact Us Section -->
-    <div class="row mb-4 rounded-table">
-        <div class="col-12 text-center p-4">
+    <div class="row mb-4">
+        <div class="content-box col-12 text-center p-4">
             <h1>Contact Us</h1>
             <p>If you have any questions, please feel free to reach out. Our team is ready to assist you with any inquiries.</p>
         </div>
     </div>
 
-    <!-- Our Address Section -->
-    <div class="row mb-4 rounded-table">
-        <div class="col-12 col-md-6 text-center p-4">
-            <h3>Our Address</h3>
-            <address>
-                Pinnacle Associates LLP<br>
-                1 Raffles Place, #23-01<br>
-                Singapore 048616
-            </address>
+    <!-- Contact Details and Form Section -->
+    <div class="row mb-4">
+        <!-- Left Column: Contact Details -->
+        <div class="col-12 col-md-6">
+            <div class="content-box p-4">
+                <h3>Contact Details</h3>
+                <p><img src="static/icons/location.png" alt="Location Icon" class="icon"> 1 Raffles Place, #23-01. Singapore 048616</p>
+                <p><img src="static/icons/phone.png" alt="Phone Icon" class="icon"> <a href="tel:+6561234567">+65 6123 4567</a></p>
+                <p><img src="static/icons/email.png" alt="Email Icon" class="icon"> <a href="mailto:info@pinnacleassociates.com">info@pinnacleassociates.com</a></p>
+                <iframe 
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBx4wiw7_h_lLqEvZ0bhWM8X4jVxHAvzMU&q=1+Raffles+Place,Singapore"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
-        <div class="col-12 col-md-6 p-4">
-            <iframe 
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBx4wiw7_h_lLqEvZ0bhWM8X4jVxHAvzMU&q=1+Raffles+Place,Singapore"
-                width="100%"
-                height="300"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-    </div>
-
-    <!-- Contact Information Section -->
-    <div class="row mb-4 rounded-table">
-        <div class="col-12 col-md-6 text-center p-4">
-            <h3>Contact Information</h3>
-            <p><img src="static/icons/phone.png" alt="Phone Icon" class="icon"> <a href="tel:+6561234567">+65 6123 4567</a></p>
-            <p><img src="static/icons/email.png" alt="Email Icon" class="icon"> <a href="mailto:info@pinnacleassociates.com">info@pinnacleassociates.com</a></p>
-        </div>
-        <div class="col-12 col-md-6 p-4">
-            <h3>Send Us a Message</h3>
-            <form action="#" method="post">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+        
+        <!-- Right Column: Contact Form -->
+        <div class="col-12 col-md-6">
+            <div class="content-box p-4">
+                <h3>Contact Form</h3>
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="JaneDoe@gmail.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contact-number" class="form-label">Contact Number</label>
+                        <input type="tel" class="form-control" id="contact-number" name="contact-number" placeholder="91234567" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="hear-about-us" class="form-label">How did you hear about us?</label>
+                        <select class="form-control" id="hear-about-us" name="hear-about-us" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="social-media">Social Media</option>
+                            <option value="newspaper">Newspaper</option>
+                            <option value="word-of-mouth">Word of Mouth</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="type-of-help" class="form-label">Type of Help</label>
+                        <select class="form-control" id="type-of-help" name="type-of-help" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="enquiry">Enquiry</option>
+                            <option value="quotation">Quotation</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
 </main>
 
 
-
-    
     <footer class="bg-light py-4">
         <div class="container">
             <div class="row">
@@ -116,9 +129,9 @@
                 <div class="col-6 col-md-2 mb-3">
                     <h5>Quick Links</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="Home.html" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="Services.html" class="nav-link p-0 text-muted">Services</a></li>
-                        <li class="nav-item mb-2"><a href="Contact us.html" class="nav-link p-0 text-muted">Contact Us</a></li>
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="services.html" class="nav-link p-0 text-muted">Services</a></li>
+                        <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-muted">Contact Us</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
                     </ul>
                 </div>
