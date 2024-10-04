@@ -60,6 +60,19 @@ header {
     height: 24px;
 }
 
+.service-icon {
+    width: 2%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.container .row .col-md-3 img {
+    width: 40%; /* Adjust width to 2% of the container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Contact Us Specific Styles */
 .contact-section {
     width: 100%;
