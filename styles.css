@@ -214,3 +214,44 @@ header {
 .mt-4 {
     margin-top: 1.5rem;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .content-box {
+        margin: 1.5vw;
+    }
+
+    .footer-logo {
+        margin-bottom: 10px;
+    }
+
+    .footer ul {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom ul {
+        justify-content: center;
+    }
+
+    .header-logo {
+        margin-bottom: 15px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
