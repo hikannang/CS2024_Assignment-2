@@ -56,18 +56,44 @@ header {
 /* Service Icon Style */
 .service-icon {
     width: 2%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .container .row .col-md-3 img {
-    width: 40%; /* Adjust width to 2% of the container */
-    height: auto; /* Maintain the aspect ratio */
+    width: 40%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    margin: 2.5vw;
+}
+
+.content-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #5f95cb;
+    margin-bottom: 20px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-detail .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 /* Text Alignment */
@@ -96,9 +122,95 @@ header {
 }
 
 /* Footer Styles */
+.footer-logo {
+    width: 80px;
+    height: auto;
+}
+
 .footer {
     border-top: 1px solid #ddd;
-    padding-top: 20px;
-    margin-top: 40px;
+    padding: 20px 0;
     color: #333;
+}
+
+.footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.footer p, .footer ul {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer .nav-link {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .nav-link:hover {
+    color: #5f95cb;
+}
+
+.footer .form-control {
+    border-radius: 0.25rem;
+}
+
+.footer .btn-primary {
+    border-radius: 0.25rem;
+    background-color: #5f95cb;
+    border: none;
+}
+
+.footer .btn-primary:hover {
+    background-color: #4a7aa4;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    margin: 0;
+}
+
+.link-body-emphasis img {
+    transition: transform 0.2s;
+}
+
+.link-body-emphasis:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-bottom li {
+    margin-left: 10px;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
 }
