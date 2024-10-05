@@ -70,6 +70,32 @@ header {
     margin-right: auto;
 }
 
+/* Contact Section Styles */
+.contact-section {
+    margin: 2.5vw; /* Add margin around the contact section */
+}
+
+.content-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #5f95cb;
+    margin-bottom: 20px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-detail .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
 /* Text Alignment */
 .align-left {
     text-align: left;
