@@ -78,7 +78,6 @@ header {
     height: 24px; /* Icon size */
 }
 
-
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .navbar-nav {
@@ -111,10 +110,6 @@ img {
     height: auto;
 }
 
-btn{
-    width: 20px;
-}
-
 #img-footer {
     width: 100px; /* Adjust icon size as needed */
     height: auto;
@@ -126,7 +121,7 @@ btn{
 }
 
 #img-portrait {
-    min-width: 500px; /* Adjust icon size as needed */
+    width: 200px; /* Adjust icon size as needed */
     height: auto;
 }
 
