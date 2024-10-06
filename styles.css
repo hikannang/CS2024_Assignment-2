@@ -53,6 +53,11 @@ header {
     height: 24px;
 }
 
+#img-carousell {
+    width: 100%;
+    height: auto;
+}
+
 /* Service Icon Style */
 .service-icon {
     width: 2%;
