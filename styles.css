@@ -43,6 +43,11 @@ header {
     list-style: none; /* Remove bullet points */
 }
 
+.col{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 .nav-link {
     color: #8b4513;
     font-weight: bold;
@@ -91,6 +96,11 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    color: black; /* Header text color */
+    text-align: center;
+}
+
 p {
     color: #ddd; /* Paragraph text color */
 }
@@ -108,6 +118,16 @@ img {
 #img-award {
     width: 150px; /* Adjust icon size as needed */
     height: auto;
+}
+
+#img-portrait {
+    width: 200px; /* Adjust icon size as needed */
+    height: auto;
+}
+
+#img-min-icon{
+    width: 50px; /* Adjust icon size as needed */
+    height: 40px;
 }
 
 .btn-primary {
