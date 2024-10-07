@@ -71,14 +71,18 @@ header {
     margin: 2.5vw;
 }
 
-.service-table,
-.content-box {
+.service-table{
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 2px solid #5f95cb;
     padding: 10px;
-    margin-bottom: 25%;
+    margin-bottom: 3% !important;
+
+}
+
+.service-table-extra{
+    margin-bottom: 2% !important;
 }
 
 .service-title {
