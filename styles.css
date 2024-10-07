@@ -1,198 +1,140 @@
-/* General Styles */
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
-    background-color: #8FAADC;
-    color: #333;
+    background-color: #5f95cb;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Header Styles */
 header {
-    background-color: #f8f9fa;
-    padding: 10px 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Matches the bg-light class in Bootstrap */
+    padding: 10px 0; /* Consistent padding */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
 .header-logo {
-    height: 50px;
-    margin-right: 20px;
+    width: auto;
+    height: 45px;
+    margin-right: 20px; /* Space between logo and navbar */
 }
 
 .navbar {
-    flex-grow: 1;
+    flex-grow: 1; /* Allows navbar to take up remaining space */
+    display: flex;
+    justify-content: flex-start; /* Align navbar items to the left */
 }
 
 .navbar-nav {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 0;
-    list-style: none;
-    padding-left: 2%;
+    margin-bottom: 0; /* Remove default margin */
+    padding-left: 0; /* Remove default padding */
+}
+
+.nav-item {
+    list-style: none; /* Remove bullet points */
+}
+
+.col{
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .nav-link {
     color: #8b4513;
     font-weight: bold;
-    margin-right: 15px;
-    text-decoration: none;
+    margin-left: 30px;
+    text-decoration: none; /* Remove underline from links */
 }
 
 .social-icons {
     display: flex;
     align-items: center;
+    margin-left: 20px; /* Push icons to the right */
 }
 
 .social-icons a {
-    background-color: #f0f0f0;
-    border-radius: 50%;
-    padding: 8px;
-    margin-left: 10px;
-    transition: background-color 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #f0f0f0; /* Background color for icons */
+    border-radius: 50%; /* Circular background */
+    padding: 8px; /* Padding around icons */
+    margin-left: 12%; /* Space between icons */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 .social-icons a:hover {
-    background-color: #e0e0e0;
+    background-color: #e0e0e0; /* Hover color */
 }
 
 .social-icons img {
-    width: 24px; /* Consistent icon size */
-    height: 24px;
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
 }
 
-/* Specific styling for icons in the index.html section */
 
-.container .row .col-md-3 img {
-    width: 50%; /* Set icon width to 20px */
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav-link {
+        margin-left: 0; /* Remove left margin for vertical alignment */
+        margin-bottom: 10px; /* Add space between links */
+    }
 }
 
-/* Services Section */
-.services-section,
-.contact-section {
-    margin: 2.5vw;
-}
-
-.service-table{
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid #5f95cb;
-    padding: 10px;
-    margin-bottom: 3% !important;
-
-}
-
-.service-table-extra{
-    margin-bottom: 2% !important;
-}
-
-.service-title {
-    font-size: 1.5rem;
-    font-weight: bold;
+h2 {
+    color: #fff; /* Header text color */
     text-align: center;
-    padding: 10px 0;
 }
 
-.service-table table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0 5px; /* Adds vertical space between rows */
-}
-
-.service-table td, .service-table th {
-    padding: 5px;
-    vertical-align: top;
-    word-wrap: break-word;
-}
-
-.icon-description {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-    margin-right: 15%;
-}
-
-.icon-text {
-    display: flex;
-    align-items: center;
-}
-
-.icon-text img {
-    width: 30px; /* Adjusted for consistency */
-    height: auto;
-    margin-right: 10px;
-    margin-left: 10%;
-}
-
-.service-review {
+h3 {
+    color: black; /* Header text color */
     text-align: center;
-    padding: 10px;
 }
 
-.review-image {
-    width: 80%;
+p {
+    color: #ddd; /* Paragraph text color */
+}
+
+img {
+    width: 50px; /* Adjust icon size as needed */
     height: auto;
-    padding: 20px;
 }
 
-.service-description {
-    padding: 0; /* Reset padding on the td */
-}
-
-.description-container {
-    max-width: 80%; 
-    margin: 0 auto; 
-    padding: 10px;
-    box-sizing: border-box; 
-}
-
-.service-description ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin: 0;
-}
-
-.service-description ul li {
-    margin-bottom: 5px;
-}
-.service-description span {
-    display: block; 
-    margin-bottom: 10px; 
-}
-
-/* Contact Section Styles */
-.content-table,
-.content-box {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid #5f95cb;
-    padding: 10px;
-    margin-bottom: 2.5%;
-}
-
-.contact-detail {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.contact-detail .icon {
+btn{
     width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    vertical-align: middle;
 }
 
-/* Button Styles */
+#img-footer {
+    width: 100px; /* Adjust icon size as needed */
+    height: auto;
+}
+
+#img-award {
+    width: 150px; /* Adjust icon size as needed */
+    height: auto;
+}
+
+#img-portrait {
+    min-width: 500px; /* Adjust icon size as needed */
+    height: auto;
+}
+
+#img-min-icon{
+    width: 50px; /* Adjust icon size as needed */
+    height: 40px;
+}
+
 .btn-primary {
     background-color: #5f95cb;
     border: none;
@@ -200,163 +142,4 @@ header {
 
 .btn-primary:hover {
     background-color: #4a7aa4;
-}
-
-.pill-button {
-    border-radius: 50px;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-}
-
-.pill-button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer Styles */
-.footer-logo {
-    width: 80px;
-    height: auto;
-}
-
-.footer {
-    border-top: 1px solid #ddd;
-    padding: 20px 0;
-    color: #333;
-}
-
-.footer h5 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
-
-.footer p, .footer ul {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.footer ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-.footer .nav-link {
-    color: #999;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer .nav-link:hover {
-    color: #5f95cb;
-}
-
-.footer .form-control {
-    border-radius: 0.25rem;
-}
-
-.footer .btn-primary {
-    border-radius: 0.25rem;
-    background-color: #5f95cb;
-    border: none;
-}
-
-.footer .btn-primary:hover {
-    background-color: #4a7aa4;
-}
-
-.list-unstyled {
-    padding-left: 0;
-    margin: 0;
-}
-
-.link-body-emphasis img {
-    transition: transform 0.2s;
-}
-
-.link-body-emphasis:hover img {
-    transform: scale(1.1);
-}
-
-.footer-bottom {
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-bottom p {
-    margin: 0;
-}
-
-.footer-bottom ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.footer-bottom li {
-    margin-left: 10px;
-}
-
-.mt-4 {
-    margin-top: 1.5rem;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .navbar-nav {
-        flex-direction: column;
-    }
-
-    .social-icons {
-        margin-top: 10px;
-    }
-
-    .content-box {
-        margin: 1.5vw;
-    }
-
-    .footer-logo {
-        margin-bottom: 10px;
-    }
-
-    .footer ul {
-        text-align: center;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-bottom ul {
-        justify-content: center;
-    }
-
-    .header-logo {
-        margin-bottom: 15px;
-    }
-
-    .nav-link {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .icon-description {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .service-review {
-        display: none; /* Hide images on smaller screens for simplicity */
-    }
-}
-
-/* Additional Styling for Bold Headings */
-h5 {
-    font-weight: bold;
 }
