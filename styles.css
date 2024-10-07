@@ -64,6 +64,7 @@ header {
 }
 
 /* Specific styling for icons in the index.html section */
+
 .container .row .col-md-3 img {
     width: 50%; /* Set icon width to 20px */
     height: auto;
