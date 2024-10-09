@@ -6,6 +6,7 @@ body {
     color: #333;
 }
 
+
 /* Header Styles */
 header {
     background-color: #f8f9fa;
@@ -63,10 +64,35 @@ header {
     height: 24px;
 }
 
-/* Specific styling for icons in the index.html section */
 
+/* index.html */
+
+.index-section,
+.contact-section {
+    margin: 2.5vw;
+}
+
+.index-table {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #5f95cb;
+    padding: 10px;
+    margin-bottom: 3% !important;
+}
+
+.index-section img,
+.service-table img{
+    width: 30%; /* Set icon width to 20px */
+    height: auto;
+    display: block;
+    padding-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Specific styling for icons in the index.html section */
 .container .row .col-md-3 img {
-    width: 50%; /* Set icon width to 20px */
+    width: 10%; /* Set icon width to 20px */
     height: auto;
     display: block;
     margin-left: auto;
@@ -134,13 +160,13 @@ header {
 
 .service-review {
     text-align: center;
-    padding: 10px;
+    padding: 5%;
 }
 
 .review-image {
-    width: 80%;
+    width: 90% !important;
     height: auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 .service-description {
@@ -214,7 +240,7 @@ header {
 
 /* Footer Styles */
 .footer-logo {
-    width: 80px;
+    width: 80px !important;
     height: auto;
 }
 
