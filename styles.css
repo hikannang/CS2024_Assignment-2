@@ -114,6 +114,86 @@
 
 /* Header CSS Ends */
 
+/* Header for contact and services*/
+/* Carousel Image Container */
+/* Custom Main Navbar for Services and Contact Pages */
+.custom-main-navbar {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-main-navbar .navbar-brand img {
+    max-height: 50px;
+}
+
+.custom-main-navbar .navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.custom-main-navbar .navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Carousel Image Container */
+.carousel-image-container {
+    position: relative;
+    width: 100%;
+    height: 650px; /* Matches the image height */
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Optional: adds a subtle background for text readability */
+    padding: 20px;
+}
+
+.carousel-text h1,
+.carousel-text p {
+    margin: 0;
+}
+
+/* Footer Divider */
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #666;
+    margin: 20px 0;
+}
+
+/* Footer Links */
+.footer-section p {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.footer-section p:not(:last-child) {
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Header for contact and services ends here */
+
 /* Footer CSS Starts */
 footer {
     font-family: Arial, sans-serif;
@@ -173,6 +253,13 @@ footer {
 
 .footer-section p {
     margin-bottom: 10px;
+    position: relative;
+}
+
+.footer-section p:not(:last-child) {
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .news-item a, .footer-section a {
