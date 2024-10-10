@@ -1,22 +1,93 @@
 /* Header CSS Start */
 
-/* Carousel Item with Black Overlay */
-.carousel-item {
-    position: relative;
-    height: calc(100vh - 56px); /* Full viewport height minus navbar height */
-    background-size: cover;
-    background-position: center;
+/* General Header Styles */
+.header-top-navbar {
+    background-color: #f8f9fa;
+    padding: 10px 5%;
+    font-weight: bold;
+    color: black;
+    border-bottom: 1px solid #ddd;
 }
 
-.carousel-item::after {
-    content: "";
+.contact-info,
+.working-hours {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust gap for closer icon and number */
+    color: black;
+}
+
+.contact-info i,
+.contact-info span,
+.working-hours span {
+    color: black;
+}
+
+.contact-info .divider {
+    margin: 0 10px;
+    color: black;
+}
+
+.contact-info i {
+    font-size: 18px;
+}
+
+.contact-info span,
+.working-hours span {
+    cursor: pointer;
+}
+
+.contact-info i:hover,
+.working-hours span:hover {
+    color: #007bff;
+}
+
+/* Increase padding between social media icons */
+.contact-info i + i {
+    margin-left: 15px;
+}
+
+
+/* Main Navbar Styles */
+.header-main-navbar {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 50% black overlay */
-    z-index: 1; /* Ensure overlay is above the image */
+    top: 2%;
+    left: 5%;
+    right: 5%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.header-navbar-container {
+    margin: 0 auto;
+}
+
+.header-main-navbar .navbar-brand img {
+    max-height: 50px;
+}
+
+.header-main-navbar .navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.header-main-navbar .navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Carousel Styles */
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-item {
+    height: calc(100vh - 56px); /* Adjust for navbar height if needed */
+    background-size: cover;
+    background-position: center;
 }
 
 .carousel-caption {
@@ -27,44 +98,130 @@
     color: white;
     text-align: center;
     padding: 20px;
-    z-index: 2; /* Ensure text is above the overlay */
-    background: transparent; /* Transparent background */
+    z-index: 2;
 }
 
-/* Header Top Navbar */
-.header-navbar .navbar-text,
-.header-navbar .nav-link {
-    color: black; /* Black font color */
+.carousel-caption h1,
+.carousel-caption p {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.header-navbar .navbar-brand img {
-    filter: brightness(0); /* Make logo black */
+.carousel-caption a.btn {
+    margin-top: 15px;
 }
 
-.header-navbar .navbar-nav,
-.header-navbar .navbar-text {
-    display: flex;
-    align-items: center; /* Vertically align text and icons */
-}
-
-/* Header Main Navbar */
-.header-main-navbar {
-    margin: 0 2.5%;
-    background-color: white;
-}
-
-.bg-transparent {
-    background-color: transparent !important;
-}
-
-.btn-success {
-    background-color: #28a745;
-    border-color: #28a745;
-}
-
-.btn-success:hover {
-    background-color: #218838;
-    border-color: #1e7e34;
-}
 /* Header CSS Ends */
+
+/* Footer CSS Starts */
+footer {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contact Us Section */
+.contact-us {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2196F3;
+    padding: 20px 2.5%;
+}
+
+.contact-box {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: #1e88e5;
+    border-radius: 5px;
+}
+
+.contact-box i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 40px 1%;
+    color: #ddd;
+    border-top: none;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 1%;
+    text-align: left;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-section h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.news-item a, .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-item a:hover, .footer-section a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #666;
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.footer-section .social-icons i {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer-section input[type="email"] {
+    padding: 10px;
+    margin-top: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-section button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.footer-section button:hover {
+    background-color: #218838;
+}
+
+/* Footer CSS Ends */
 
