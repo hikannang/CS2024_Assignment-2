@@ -1,388 +1,70 @@
-/* General Styles */
-body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    background-color: #8FAADC;
-    color: #333;
+/* Header CSS Start */
+
+/* Carousel Item with Black Overlay */
+.carousel-item {
+    position: relative;
+    height: calc(100vh - 56px); /* Full viewport height minus navbar height */
+    background-size: cover;
+    background-position: center;
 }
 
-
-/* Header Styles */
-header {
-    background-color: #f8f9fa;
-    padding: 10px 0;
-}
-
-.header-logo {
-    height: 50px;
-    margin-right: 20px;
-}
-
-.navbar {
-    flex-grow: 1;
-}
-
-.navbar-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 0;
-    list-style: none;
-    padding-left: 2%;
-}
-
-.nav-link {
-    color: #8b4513;
-    font-weight: bold;
-    margin-right: 15px;
-    text-decoration: none;
-}
-
-.social-icons {
-    display: flex;
-    align-items: center;
-}
-
-.social-icons a {
-    background-color: #f0f0f0;
-    border-radius: 50%;
-    padding: 8px;
-    margin-left: 10px;
-    transition: background-color 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-icons a:hover {
-    background-color: #e0e0e0;
-}
-
-.social-icons img {
-    width: 24px; /* Consistent icon size */
-    height: 24px;
-}
-
-
-/* index.html */
-
-.index-section,
-.contact-section {
-    margin: 2.5vw;
-}
-
-.index-table {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid #5f95cb;
-    padding: 10px;
-    margin-bottom: 3% !important;
-}
-
-.index-section img,
-.service-table img{
-    width: 30%; /* Set icon width to 20px */
-    height: auto;
-    display: block;
-    padding-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-}
-/* Specific styling for icons in the index.html section */
-.container .row .col-md-3 img {
-    width: 10%; /* Set icon width to 20px */
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Services Section */
-.services-section,
-.contact-section {
-    margin: 2.5vw;
-}
-
-.service-table{
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid #5f95cb;
-    padding: 10px;
-    margin-bottom: 3% !important;
-
-}
-
-.service-table-extra{
-    margin-bottom: 2% !important;
-}
-
-.service-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.service-table table {
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    border-collapse: separate;
-    border-spacing: 0 5px; /* Adds vertical space between rows */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 50% black overlay */
+    z-index: 1; /* Ensure overlay is above the image */
 }
 
-.service-table td, .service-table th {
-    padding: 5px;
-    vertical-align: top;
-    word-wrap: break-word;
-}
-
-.icon-description {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-    margin-right: 15%;
-}
-
-.icon-text {
-    display: flex;
-    align-items: center;
-}
-
-.icon-text img {
-    width: 30px; /* Adjusted for consistency */
-    height: auto;
-    margin-right: 10px;
-    margin-left: 10%;
-}
-
-.service-review {
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
     text-align: center;
-    padding: 5%;
+    padding: 20px;
+    z-index: 2; /* Ensure text is above the overlay */
+    background: transparent; /* Transparent background */
 }
 
-.review-image {
-    width: 90% !important;
-    height: auto;
-    padding: 10px;
+/* Header Top Navbar */
+.header-navbar .navbar-text,
+.header-navbar .nav-link {
+    color: black; /* Black font color */
 }
 
-.service-description {
-    padding: 0; /* Reset padding on the td */
+.header-navbar .navbar-brand img {
+    filter: brightness(0); /* Make logo black */
 }
 
-.description-container {
-    max-width: 80%; 
-    margin: 0 auto; 
-    padding: 10px;
-    box-sizing: border-box; 
-}
-
-.service-description ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin: 0;
-}
-
-.service-description ul li {
-    margin-bottom: 5px;
-}
-.service-description span {
-    display: block; 
-    margin-bottom: 10px; 
-}
-
-/* Contact Section Styles */
-.content-table,
-.content-box {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid #5f95cb;
-    padding: 10px;
-    margin-bottom: 2.5%;
-}
-
-.contact-detail {
+.header-navbar .navbar-nav,
+.header-navbar .navbar-text {
     display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
+    align-items: center; /* Vertically align text and icons */
 }
 
-.contact-detail .icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    vertical-align: middle;
+/* Header Main Navbar */
+.header-main-navbar {
+    margin: 0 2.5%;
+    background-color: white;
 }
 
-/* Button Styles */
-.btn-primary {
-    background-color: #5f95cb;
-    border: none;
+.bg-transparent {
+    background-color: transparent !important;
 }
 
-.btn-primary:hover {
-    background-color: #4a7aa4;
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
 }
 
-.pill-button {
-    border-radius: 50px;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
 }
+/* Header CSS Ends */
 
-.pill-button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer Styles */
-.footer-logo {
-    width: 80px !important;
-    height: auto;
-}
-
-.footer {
-    border-top: 1px solid #ddd;
-    padding: 20px 0;
-    color: #333;
-}
-
-.footer h5 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
-
-.footer p, .footer ul {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.footer ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-.footer .nav-link {
-    color: #999;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer .nav-link:hover {
-    color: #5f95cb;
-}
-
-.footer .form-control {
-    border-radius: 0.25rem;
-}
-
-.footer .btn-primary {
-    border-radius: 0.25rem;
-    background-color: #5f95cb;
-    border: none;
-}
-
-.footer .btn-primary:hover {
-    background-color: #4a7aa4;
-}
-
-.list-unstyled {
-    padding-left: 0;
-    margin: 0;
-}
-
-.link-body-emphasis img {
-    transition: transform 0.2s;
-}
-
-.link-body-emphasis:hover img {
-    transform: scale(1.1);
-}
-
-.footer-bottom {
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-bottom p {
-    margin: 0;
-}
-
-.footer-bottom ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.footer-bottom li {
-    margin-left: 10px;
-}
-
-.mt-4 {
-    margin-top: 1.5rem;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .navbar-nav {
-        flex-direction: column;
-    }
-
-    .social-icons {
-        margin-top: 10px;
-    }
-
-    .content-box {
-        margin: 1.5vw;
-    }
-
-    .footer-logo {
-        margin-bottom: 10px;
-    }
-
-    .footer ul {
-        text-align: center;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-bottom ul {
-        justify-content: center;
-    }
-
-    .header-logo {
-        margin-bottom: 15px;
-    }
-
-    .nav-link {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .icon-description {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .service-review {
-        display: none; /* Hide images on smaller screens for simplicity */
-    }
-}
-
-/* Additional Styling for Bold Headings */
-h5 {
-    font-weight: bold;
-}
