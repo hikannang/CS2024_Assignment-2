@@ -59,6 +59,10 @@
     padding: 10px 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 3;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .header-navbar-container {
