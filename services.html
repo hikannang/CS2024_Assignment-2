@@ -3,441 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Pinnacle Associates LLP</title>
-    <link rel="icon" type="image/x-icon" href="static/icons/favicon.ico">
+    <title>Services</title> <!-- Change the title accordingly for each page -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <link href="services_styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Use the same CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="bg-light py-2">
-        <div class="container d-flex align-items-center justify-content-between">
-            <a href="index.html" class="d-flex align-items-center">
-                <img src="static/logo/logo.png" alt="Company Logo" class="header-logo me-3">
-            </a>
-            <nav class="navbar">
-                <ul class="navbar-nav flex-row">
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="social-icons d-flex">
-                <a href="https://www.facebook.com" aria-label="Facebook">
-                    <img src="static/icons/facebook.png" alt="Facebook Icon">
-                </a>
-                <a href="https://twitter.com" aria-label="Twitter">
-                    <img src="static/icons/x.png" alt="x Icon">
-                </a>
-                <a href="https://www.instagram.com" aria-label="Instagram">
-                    <img src="static/icons/instagram.png" alt="Instagram Icon">
-                </a>
-                <a href="https://www.linkedin.com" aria-label="LinkedIn">
-                    <img src="static/icons/linkedin.png" alt="LinkedIn Icon">
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <main class="services-section">
-      <div class="service-table mb-4" style="text-align: center;">
-          <h1>Services</h1>
-          <p>With over 20 years of experience, we provide comprehensive accounting, taxation, auditing, and corporate secretarial services. Specialising in compliance, tax planning, and risk management, we support SMEs and corporate clients. Leveraging cloud-based software, we deliver real-time financial insights and tailored advice to meet the unique needs of each client.</p>
-      </div>
-  
-      <!-- Cloud Based Accounting Software Table -->
-      <div class="service-table service-table-extra mb-3">
-          <table class="w-100">
-              <tr>
-                  <td colspan="3" class="service-title">
-                      Cloud-Based Accounting Software
-                  </td>
-              </tr>
-              <tr>
-                <td colspan="3">
-                    <hr class="divider">
-                </td>
-            </tr>
-              <tr>
-                  <td class="icon-description">
-                      <div class="icon-text">
-                          <img src="./static/services/services_icons/realtime.png" alt="Real-Time">
-                          <span><h5>Real Time Access to Data</h5>Gain immediate access to real-time financial data and reports for informed decision-making, enhanced transparency, and agile business management.</span>
-                      </div>
-                  </td>
-                  <td rowspan="3" class="service-review">
-                      <img src="./static/services/services_reviews/review_cloud_based.png" alt="review-cloud" class="review-image">
-                  </td>
-              </tr>
-              <tr>
-                  <td class="icon-description">
-                      <div class="icon-text">
-                          <img src="./static/services/services_icons/security.png" alt="security">
-                          <span><h5>Security</h5>Our cloud-based software offers top-tier security, with advanced encryption, multi-factor authentication, and regular updates to protect your data.</span>
-                      </div>
-                  </td>
-              </tr>
-              <tr>
-                  <td class="icon-description">
-                      <div class="icon-text">
-                          <img src="./static/services/services_icons/personalized.png" alt="personalised">
-
-                          <span><h5>Personalised solutions</h5>We provide customised financial solutions, tailored to each client’s unique needs, ensuring professional and personalised support for optimal efficiency and success.</span>
-                      </div>
-                  </td>
-              </tr>
-              <tr>
-                  <td colspan="3">
-                      <hr class="divider">
-                  </td>
-              </tr>
-              <tr>
-                <td colspan="3" class="service-description">
-                    <div class="description-container">
-                        <span>Our team of certified accountants and tax advisors leverages our cloud-based accounting software, allowing clients to access real-time financial data and reports. Our team of certified accountants and tax advisors is dedicated to providing precise, up-to-date, timely, and customized financial advice, tailored to each client’s specific requirements.</span>
-                        <ul>
-                            <li>Gain access to real time financial data and reports</li>
-                            <li>Team of certified accountants and tax advisors</li>
-                            <li>Provide precise and timely financial advice</li>
-                            <li>Offer personalised solutions tailored to each client's specific needs</li>
-                        </ul>
+    <!-- Header -->
+    <!-- Top Navbar -->
+    <nav class="header-top-navbar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6 d-flex justify-content-start">
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i><span>800.1148.800</span>
+                        <span class="divider">|</span>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
                     </div>
-                </td>
-              </tr>
-          </table>
-      </div>
-
-    <!-- Regulation Compliance / Advisory Service Table-->
-      <div class="service-table service-table-extra mb-3">
-          <table class="w-100">
-              <tr>
-                  <td colspan="3" class="service-title">
-                      Regulation Compliance / Advisory Service
-                  </td>
-              </tr>
-              <tr>
-                <td colspan="3">
-                    <hr class="divider">
-                </td>
-            </tr>
-              <tr>
-                <td class="icon-description">
-                    <div class="icon-text">
-                        <img src="./static/services/services_icons/transparency.png" alt="Icon 3">
-                        <span><h5>Transparency</h5>Our regulation compliance and advisory services ensure clear communication, open reporting, and full visibility, guaranteeing transparency and building trust.</span>
-                    </div>
-                </td>
-                <td rowspan="3" class="service-review">
-                    <img src="./static/services/services_reviews/review_regulation_advisory.png" alt="Review Image" class="review-image">
-                </td>
-              </tr>
-              <tr>
-                  <td class="icon-description">
-                      <div class="icon-text">
-                          <img src="./static/services/services_icons/accuracy_assurance.png" alt="Icon 2">
-                          <span><h5>Accuracy Assurance</h5>Our regulation compliance and advisory services ensure precise guidance, thorough evaluations, and complete accuracy, providing confidence and guaranteed assurance.</span>
-                      </div>
-                  </td>
-              </tr>
-              <tr>
-                  <td class="icon-description">
-                    <div class="icon-text">
-                        <img src="./static/services/services_icons/satisfaction_guarantee.png" alt="satisfaction">
-                        <span><h5>Satisfaction Guarantee</h5>Our regulation complaince and advisory service ensure your business meets legal standards, mitigates risks, and guarantees complete satisfaction.</span>
-                    </div>
-                </td>
-              </tr>
-              <tr>
-                  <td colspan="3">
-                      <hr class="divider">
-                  </td>
-              </tr>
-              <tr>
-                <td colspan="3" class="service-description">
-                    <div class="description-container">
-                        <span>We offer audit services that ensure adherence to regulatory standards and verify the accuracy of financial statements, which is vital for promoting transparency and strengthening stakeholder trust.</span>
-                        <ul>
-                            <li>Deliver audit services to ensure compliance with regulatory requirements</li>
-                            <li>Provide assurance on the accuracy of financial statements</li>
-                            <li>Reinforce transparency and foster trust with clients</li>
-                        </ul>
-                    </div>
-                </td>
-              </tr>
-          </table>
-      </div>
-
-      <!-- Tax Planning / Risk Management -->
-      <div class="service-table service-table-extra mb-3">
-        <table class="w-100">
-            <tr>
-                <td colspan="3" class="service-title">
-                    Tax Planning / Risk Management
-                </td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                  <hr class="divider">
-              </td>
-          </tr>
-            <tr>
-                <td class="icon-description">
-                    <div class="icon-text">
-                        <img src="./static/services/services_icons/regulatory_compliance.png" alt="Icon 1">
-                        <span><h5>Regulatory Compliance</h5>Ensure adherence to corporate governance standards, manage statutory compliance, and oversee board and shareholder meetings to maintain transparency and accountability.</span>
-                    </div>
-                </td>
-                <td rowspan="3" class="service-review">
-                    <img src="./static/services/services_reviews/review_tax_planning.png" alt="Review Image" class="review-image">
-                </td>
-            </tr>
-            <tr>
-                <td class="icon-description">
-                    <div class="icon-text">
-                        <img src="./static/services/services_icons/strategic_support.png" alt="Icon 2">
-                        <span><h5>Strategic Financial Support</h5>Facilitate mergers and acquisitions, conduct due diligence, develop financial models, and assist in capital raising to enhance business growth and investment decisions.</span>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="icon-description">
-                    <div class="icon-text">
-                        <img src="./static/services/services_icons/adminstrative_Management.png" alt="Icon 3">
-                        <span><h5>Adminstrative Insights</h5>Provide company formation assistance, handle record maintenance, and prepare regulatory filings to streamline operations and ensure all legal obligations are met.</span>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                    <hr class="divider">
-                </td>
-            </tr>
-            <tr>
-              <td colspan="3" class="service-description">
-                  <div class="description-container">
-                      <span>Tax services are a critical component of our offerings. We assist businesses in navigating the complexities of tax regulations, optimizing tax liabilities, and engaging in strategic tax planning, all while ensuring compliance with the Inland Revenue Authority of Singapore (IRAS) and the Accounting and Corporate Regulatory Authority (ACRA).</span>
-                      <ul>
-                          <li>Critical component of our service offerings</li>
-                          <li>Assist business in navigating complex tax regulations</li>
-                          <li>Optimise tax liabilities</li>
-                          <li>Engage in strategic tax planning</li>
-                          <li>Ensure compliance with IRAS and ACRA</li>
-                      </ul>
-                  </div>
-              </td>
-            </tr>
-        </table>
-    </div>
-
-    <!--Corporate Finance and Secretarial Service -->
-    <div class="service-table service-table-extra mb-3">
-        <table class="w-100">
-            <tr>
-                <td colspan="3" class="service-title">
-                    Corporate Finance / Secretarial Service
-                </td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                  <hr class="divider">
-              </td>
-          </tr>
-            <tr>
-                <td class="icon-description">
-                    <div class="icon-text">
-                        <img src="./static/services/services_icons/strategic_tax_optimisation.png" alt="Icon 1">
-                        <span><h5>Strategic Tax Optimization</h5>Develop tailored strategies to minimize tax liabilities, maximise deductions, and ensure compliance with federal, state, and local regulations.</span>
-                    </div>
-                </td>
-                <td rowspan="3" class="service-review">
-                    <img src="./static/services/services_reviews/review_corporate_finance.png" alt="Review Image" class="review-image">
-                </td>
-            </tr>
-            <tr>
-                <td class="icon-description">
-                    <div class="icon-text">
-                        <img src="./static/services/services_icons/risk_assessment.png" alt="Icon 2">
-                        <span><h5>Extensive Risk Assessment</h5>Conduct thorough assessments to identify financial, operational, and compliance risks, implementing strategies to effectively mitigate these potential issues.</span>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="icon-description">
-                    <div class="icon-text">
-                        <img src="./static/services/services_icons/continuous_compliance.png" alt="Icon 3">
-                        <span><h5>Continuous Compliance</h5>Establish systems for continuous monitoring of tax obligations and risk factors, ensuring adherence to changing regulations and best practices.</span>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                    <hr class="divider">
-                </td>
-            </tr>
-            <tr>
-              <td colspan="3" class="service-description">
-                  <div class="description-container">
-                      <span>Tax services are a critical component of our offerings. We assist businesses in navigating the complexities of tax regulations, optimizing tax liabilities, and engaging in strategic tax planning, all while ensuring compliance with the Inland Revenue Authority of Singapore (IRAS) and the Accounting and Corporate Regulatory Authority (ACRA).</span>
-                      <ul>
-                          <li>Critical component of our service offerings</li>
-                          <li>Assist business in navigating complex tax regulations</li>
-                          <li>Optimise tax liabilities</li>
-                          <li>Engage in strategic tax planning</li>
-                          <li>Ensure compliance with IRAS and ACRA</li>
-                      </ul>
-                  </div>
-              </td>
-            </tr>
-        </table>
-    </div>
-
-    <!-- Pricing Table -->
-    <div class="service-table mb-3 p-3 pb-md-4 mx-auto text-center">
-        <h1>Pricing</h1>
-        <p>Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
-        <div class=" row row-cols-1 row-cols-md-4 mb-4 text-center">
-        <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <!-- Cloud Based Pricing -->
-            <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Cloud-Based Accounting Software</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$600+<small class="text-body-secondary fw-light">/mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>Full access to all features</li>
-                <li>Multi-user access</li>
-                <li>Real-time financial insights</li>
-                <li>Monthly financial reports / analytics</li>
-                <li>Integration with CRM and ERP</li>
-              </ul>
-              <a href="#" class="btn btn-primary pill-button">Contact us</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <!-- Regulation Compliance/ Advisory Service  -->
-            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                <div class="card-header py-3 text-bg-primary border-primary">
-              <h4 class="my-0 fw-normal">Regulation Compliance / Advisory Service</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$1800+<small class="text-body-secondary fw-light">/mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>Comprehensive regulatory updates</li>
-                <li>Annual compliance audit</li>
-                <li>Personalized assistance</li>
-                <li>Advisory sessions for compliance strategies</li>
-              </ul>
-              <a href="#" class="btn btn-primary pill-button">Contact us</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <!-- Corporate Finance and Secretarial service -->
-            <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Corporate Finance and Secretarial Service</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$1500+<small class="text-body-secondary fw-light">/mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>Strategic financial advice and planning</li>
-                <li>Full secretarial service </li>
-                <li>Modelling tools and resources</li>
-                <li>Dedicated financial accountant for support</li>
-              </ul>
-              <a href="#" class="btn btn-primary pill-button">Contact us</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-              <div class="card-header py-3 text-bg-primary border-primary">
-                <h4 class="my-0 fw-normal">Tax Planning / <br>Risk Management</h4>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">$1400+<small class="text-body-secondary fw-light">/mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>Tax optimization and planning strategies</li>
-                  <li>Annual tax return preparation and filing</li>
-                  <li>Risk assessments</li>
-                  <li>Tax advisor for personalized support</li>
-                </ul>
-                <a href="#" class="btn btn-primary pill-button">Contact us</a>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  </main>
-  
-    
-  <footer class="bg-light py-4">
-    <div class="container">
-        <div class="row">
-            <!-- Company Logo and Quick Links -->
-            <div class="col-12 col-md-3 mb-3 d-flex flex-column align-items-center">
-                <a href="index.html" class="d-flex align-items-center mb-3">
-                    <img src="static/logo/logo.png" alt="Company Logo" class="footer-logo">
-                </a>
-                <ul class="nav flex-column align-items-center">
-                    <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="services.html" class="nav-link p-0 text-muted">Services</a></li>
-                    <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-muted">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <!-- About Us and Vision/Mission -->
-            <div class="col-12 col-md-3 mb-3">
-                <div>
-                    <h5>Vision</h5>
-                    <p class="text-muted mb-1">To be the leading provider of innovative accounting solutions that empower businesses to achieve financial confidence and success.</p>
                 </div>
-                <div>
-                    <h5 class="mt-4">Mission</h5>
-                    <p class="text-muted mb-1">Our mission is to deliver exceptional financial services through expertise, integrity, and personalized solutions that foster growth and sustainability.</p>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <div class="working-hours">
+                        <span>MON - FRI 0900 - 1800</span>
+                        <span class="divider">|</span>
+                        <span>Email Us</span>
+                    </div>
                 </div>
             </div>
-
-            <!-- Office Location and Business Hours -->
-            <div class="col-12 col-md-3 mb-3">
-                <h5>Office Location</h5>
-                <p class="text-muted mb-1">1 Raffles Place, #23-01. Singapore 048616</p>
-                <h5 class="mt-4">Business Hours</h5>
-                <p class="text-muted">0900 to 1730</p>
-            </div>
-
-            <!-- Newsletter Subscription -->
-            <div class="col-12 col-md-3 mb-3">
-                <h5>Subscribe to Our Newsletter</h5>
-                <p class="text-muted">Monthly digest of what's new and exciting from us.</p>
-                <form>
-                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <input id="newsletter1" type="email" class="form-control" placeholder="Email address" required>
-                        <button class="btn btn-primary" type="submit">Subscribe</button>
-                    </div>
-                </form>
-            </div>
         </div>
+    </nav>        
 
-        <!-- Footer Bottom -->
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-3 border-top">
-            <p class="mb-0" style="color: black;">© 2024 Pinnacle Associates LLP. All rights reserved.</p>
-            <ul class="list-unstyled d-flex mb-0">
-                <li class="ms-3"><a class="link-body-emphasis" href="https://twitter.com"><img src="static/icons/x.png" alt="Twitter Icon" width="24" height="24"></a></li>
-                <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com"><img src="static/icons/instagram.png" alt="Instagram Icon" width="24" height="24"></a></li>
-                <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com"><img src="static/icons/facebook.png" alt="Facebook Icon" width="24" height="24"></a></li>
-                <li class="ms-3"><a class="link-body-emphasis" href="https://www.linkedin.com"><img src="static/icons/linkedin.png" alt="LinkedIn Icon" width="24" height="24"></a></li>
-            </ul>
+    <!-- Image Carousel Section with Custom Navbar -->
+    <div class="carousel-image-container">
+        <img src="path/to/your/image.jpg" alt="Carousel Image" class="carousel-image">
+        
+        <!-- Custom Main Navbar -->
+        <nav class="navbar navbar-expand-lg custom-main-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./static/logo/logo.png" alt="Logo" height="30">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#customMainNavbar" aria-controls="customMainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="customMainNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="carousel-text">
+            <h1 class="display-4">Services</h1>
+            <p>These are the services we provide.</p>
         </div>
     </div>
-</footer>
 
+    <!-- Footer Starts -->
+    <footer>
+        <!-- Contact Us Section -->
+        <div class="contact-us">
+            <div class="contact-box">
+                <i class="fas fa-clock"></i>
+                <p>MONDAY TO FRIDAY<br>09:00 - 20:00</p>
+            </div>
+            <div class="contact-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>4771 WEST FIELD MINT,<br>SALT LAKE CITY, UT 72883</p>
+            </div>
+            <div class="contact-box">
+                <i class="fas fa-envelope"></i>
+                <p>E-MAIL:<br>INFO@GOODGROWTH.COM</p>
+            </div>
+            <div class="contact-box">
+                <i class="fas fa-phone"></i>
+                <p>CALL US:<br>800.1148.800</p>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+            <div class="footer-section">
+                <img src="./static/logo/logo.png" alt="PALLP logo" class="footer-logo">
+                <p>Efficiently enable enabled sources and cost effective products. Completely synthesize principle-centered information after ethical communities.</p>
+                <div class="social-icons">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-section">
+                <h2>RECENT NEWS</h2>
+                <div class="news-item">
+                    <a href="#">Front-end processes with effective convergence</a>
+                    <br><small>3 days ago</small>
+                </div>
+                <hr>
+                <div class="news-item">
+                    <a href="#">User friendly intellectual capital</a>
+                    <br><small>5 days ago</small>
+                </div>
+                <hr>
+                <div class="news-item">
+                    <a href="#">Innovate open-source infrastructures</a>
+                    <br><small>1 month ago</small>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-section">
+                <h2>LINKS</h2>
+                <p><a href="index.html">HOME</a></p>
+                <p><a href="services.html">SERVICES</a></p>
+                <p><a href="#">PROJECTS</a></p>
+                <p><a href="#">BLOG</a></p>
+                <p><a href="contact.html">CONTACT</a></p>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-section">
+                <h2>NEWSLETTER</h2>
+                <p>Enter your e-mail and subscribe to our newsletter</p>
+                <input type="email" placeholder="E-mail">
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
