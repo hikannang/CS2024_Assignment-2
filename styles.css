@@ -615,5 +615,135 @@ hr {
   .stats-list strong {
     display: block;
     font-size: 1.5rem;
-  }
-  
+  }  
+/* Stats Section End */
+
+/* Services Start */
+/* Services Header */
+#services-services {
+    padding: 60px 2.5vw;
+    background-color: #f9f9f9;
+}
+
+#services-services h2 {
+    font-size: 54px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#services-services .highlight {
+    color: #007bff;
+
+}
+
+#services-services p {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Services card */
+#services-card {
+    margin: 0 2.5vw;
+    padding: 40px 0;
+}
+
+#services-card .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+}
+
+#services-card .service-card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s;
+    min-height: max-content;
+}
+
+#services-card .service-card:hover {
+    transform: translateY(-5px);
+}
+
+#services-card .services-card-icon {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #333; /* Default color, customize as needed */
+}
+
+#services-card .services-card-h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#services-card .services-card-p {
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+#services-card .services-card-button {
+    font-size: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#services-card .services-card-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.cloud-app-mockup{
+    align-items: center;
+    margin: 2.5vh 5vw 2.5vh 5vw;
+    max-width:100%;
+}
+
+.cloud-app-mockup img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 5vw;
+}
+
+.col-md-3 {
+    margin: 0.5vw;
+}
+
+.col-md-3 a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #1e88e5;
+}
+
+.services-container{
+    margin: 2.5vh 5vw 2.5vh 5vw;
+    /* margin: 0px 30px 0px 30px; */
+}
+
+.accordion {
+    margin:
+}
+
+.accordion-header {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.accordion-body {
+    font-size: 20px !important;
+}
+/* Services CSS Ends*/
