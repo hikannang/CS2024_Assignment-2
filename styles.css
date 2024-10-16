@@ -1,7 +1,7 @@
 /* Body Styles */
 body {
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 125% !important;
+    font-size: 115% !important;
 }
 
 * {
@@ -12,7 +12,6 @@ body, html {
     overflow-x: hidden;
 }
 
-/* Additional styles for specific elements, if needed */
 h1, h2, h3, h4, h5, h6, p, a, nav, footer {
     font-family: 'Source Sans 3', sans-serif;
     
@@ -33,7 +32,7 @@ h1, h2, h3, h4, h5, h6, p, a, nav, footer {
 .working-hours {
     display: flex;
     align-items: center;
-    gap: 10px; /* Adjust gap for closer icon and number */
+    gap: 10px; 
     color: black;
 }
 
@@ -62,7 +61,6 @@ h1, h2, h3, h4, h5, h6, p, a, nav, footer {
     color: #007bff;
 }
 
-/* Increase padding between social media icons */
 .contact-info i + i {
     margin-left: 15px;
 }
@@ -108,7 +106,7 @@ h1, h2, h3, h4, h5, h6, p, a, nav, footer {
 }
 
 #mainCarousel .carousel-item {
-    height: calc(100vh - 56px); /* Adjust for navbar height if needed */
+    height: calc(100vh - 56px);
     background-size: cover;
     background-position: center;
 }
@@ -126,9 +124,9 @@ h1, h2, h3, h4, h5, h6, p, a, nav, footer {
 
 #mainCarousel .carousel-caption h1,
 #mainCarousel .carousel-caption p {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.75);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 30px;
 }
 
 #mainCarousel .carousel-control-prev-icon,
@@ -147,7 +145,7 @@ h1, h2, h3, h4, h5, h6, p, a, nav, footer {
     top: 2%;
     left: 5%;
     right: 5%;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.8); 
     z-index: 1000;
     padding: 10px;
     border-radius: 5px;
@@ -175,7 +173,7 @@ h1, h2, h3, h4, h5, h6, p, a, nav, footer {
 .carousel-image-container {
     position: relative;
     width: 100%;
-    height: 650px; /* Matches the image height */
+    height: 650px;
     overflow: hidden;
 }
 
@@ -183,7 +181,7 @@ h1, h2, h3, h4, h5, h6, p, a, nav, footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-color: rgba(0, 0, 0, 0.2); /* Black overlay with 50% opacity */
+    background-color: rgba(0, 0, 0, 0.2); 
 }
 
 .carousel-text {
@@ -193,7 +191,7 @@ h1, h2, h3, h4, h5, h6, p, a, nav, footer {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    background: rgba(0, 0, 0, 0.5); /* Optional: adds a subtle background for text readability */
+    background: rgba(0, 0, 0, 0.75); 
     padding: 20px;
 }
 
@@ -278,7 +276,7 @@ footer {
 .footer-section h2 {
     color: #333333;
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -362,7 +360,7 @@ hr {
 }
 
 #index-services h2 {
-    font-size: 54px;
+    font-size: 48px;
     font-weight: 700;
     color: #333;
     margin-bottom: 20px;
@@ -374,7 +372,7 @@ hr {
 }
 
 #index-services p {
-    font-size: 24px;
+    font-size: 20px;
     color: #666;
     margin-bottom: 40px;
 }
@@ -383,17 +381,20 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 2.5%; /* 2.5% margin on the left and right of the row */
+    margin: 0 2.5%; 
 }
 
 .service-box {
     background-color: #fff;
-    padding: 22px;
+    max-width:fit-content;
+    max-height: fit-content;
+    column-gap: 4vw;
+    padding: 22px 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     flex: 1;
-    margin: 0 1.5%; /* 1% total margin between boxes (0.5% on each side) */
+    margin: 0 1.5%; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -411,7 +412,7 @@ hr {
 }
 
 .service-box h3 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 600;
     color: #333;
     margin-bottom: 10px;
@@ -442,7 +443,7 @@ hr {
 /* Details section */
 #index-details {
     position: relative;
-    background-image: url('./static/banner/1920x650.png'); /* Replace with your image path */
+    background-image: url('./static/index_page/about_us.jpg');
     background-size: cover;
     background-position: center;
     padding: 60px 0;
@@ -456,14 +457,14 @@ hr {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3));
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7));
     z-index: 1;
 }
 
 .details-content {
     position: relative;
     z-index: 2;
-    max-width: 600px;
+    max-width: 620px;
     margin-left: 5vw;
     color: #333;
 }
@@ -509,7 +510,7 @@ hr {
 /* Testimonial Section Styles */
 #index-testimonial {
     padding: 60px 5vw;
-    background-color: #f8f9fa; /* Optional: Add background color similar to other sections */
+    background-color: #f8f9fa; 
   }
   
 .testimonial-content h2 {
@@ -550,19 +551,21 @@ hr {
   /* Stats section */
   #index-stats {
     position: relative;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('background-image.jpg');
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)), url('./static/index_page/cost-effective.jpg');
     background-size: cover;
     background-position: center;
     color: #333;
     padding: 60px 0;
-  }
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
   
   .title {
     font-size: 54px;
     font-weight: 700;
-    color: #333333;
-    margin-bottom: 10px;
-    text-align: left;
+    color: #000000;
+    text-align: center;
     margin-left: 5vw;
   }
   
@@ -588,6 +591,7 @@ hr {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
+    text-align: center;
   }
   
   .info-box hr {
@@ -600,18 +604,20 @@ hr {
     font-size: 21px;
     color: #ffffff;
     margin: 10px;
-    text-align: left;
+    text-align: center;
   }
   
   .stats-list {
     margin: 10px;
     border-radius: 10px;
-    flex: 1;
     background-color: #007bff;
     color: #fff;
     list-style: none;
     padding: 0 30px 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   .stats-list li {
@@ -629,7 +635,7 @@ hr {
 /* Services Start */
 /* Services Header */
 #services-services {
-    padding: 60px 2.5vw;
+    padding: 10vh 2.5vw;
     background-color: #f9f9f9;
 }
 
@@ -648,7 +654,6 @@ hr {
 #services-services p {
     font-size: 24px;
     color: #666;
-    margin-bottom: 20px;
 }
 
 /* Services card */
@@ -679,7 +684,7 @@ hr {
 #services-card .services-card-icon {
     font-size: 40px;
     margin-bottom: 30px;
-    color: #333; /* Default color, customize as needed */
+    color: #333;
 }
 
 #services-card .services-card-h3 {
@@ -773,7 +778,7 @@ hr {
     background-color: #ffffff;
     border-bottom: 1px solid #ddd;
     padding: 20px;
-    text-align: justify; /* Justify text alignment */
+    text-align: justify;
 }
 /* Services CSS Ends*/
 
@@ -801,7 +806,7 @@ hr {
 #contact-card .services-card-icon {
     font-size: 40px;
     margin-bottom: 30px;
-    color: #333; /* Default color, customize as needed */
+    color: #333; 
 }
 
 #contact-card .services-card-h3 {
@@ -867,8 +872,8 @@ hr {
 
 .message-contact-form button {
     display: block;
-    width: auto;
-    margin-top: 20px;
+    width: 25%;
+    margin: 20px auto;
     padding: 10px;
     font-size: 16px;
     background-color: #007bff;

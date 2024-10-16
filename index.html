@@ -1,285 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home | Pinnacle Associates LLP</title>
-        <link rel="icon" type="image/x-icon" href="static/icons/favicon.ico">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Pinnacle Associates LLP</title>
+    <link rel="icon" type="image/x-icon" href="static/icons/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
     <!-- Header -->
-        <!-- Top Navbar -->
-        <nav class="header-top-navbar">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-md-6 d-flex justify-content-start">
-                        <div class="contact-info">
-                            <i class="fas fa-phone"></i><span>+65 6235 3535</span>
-                            <span class="divider">|</span>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-linkedin-in"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex justify-content-end">
-                        <div class="working-hours">
-                            <span>MON - FRI 0900 - 1800</span>
-                            <span class="divider">|</span>
-                            <span>Email Us</span>
-                        </div>
+    <!-- Top Navbar -->
+    <nav class="header-top-navbar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6 d-flex justify-content-start">
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i><span>+65 6235 3535</span>
+                        <span class="divider">|</span>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
                     </div>
                 </div>
-            </div>
-        </nav>        
-
-        <!-- Main Carousel -->
-            <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-                <!-- Main Navbar (fixed position within the carousel) -->
-                <nav class="navbar navbar-expand-lg navbar-light header-main-navbar">
-                    <div class="container-fluid header-navbar-container">
-                        <a class="navbar-brand" href="#">
-                            <img src="./static/logo/logo.png" alt="Logo" height="30">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerMainNavbar" aria-controls="headerMainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="headerMainNavbar">
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="services.html">SERVICES</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">ABOUT US</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">PROJECTS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">BLOG</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">CONTACT</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./static/carousel/169example.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1 class="display-4">EXPERTING ACCOUNTING, TAILORED FOR YOUR BUDGET</h1>
-                            <p>Completely synergise resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling.</p>
-                            <a href="#" class="btn btn-success btn-lg">GET STARTED</a>
-                        </div>
-                    </div>
-                    <!-- Add other carousel items here -->
-                    <div class="carousel-item">
-                        <img src="./static/banner/index_carousel_2.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1 class="display-4">Interns not meeting expectations?</h1>
-                            <p>We provide professional services tailored to meet your needs, all while staying within your budget.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev" style="z-index: 1;">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next" style="z-index: 1;">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-    <!-- Header Ends -->
-
-        <!-- Services Section -->
-            <div id="index-services" class="services-section">
-                <div class="container-fluid text-center">
-                    <h2>HOW CAN <span class="highlight">PINNACLE ACCOUNTANTS</span> HELP YOU?</h2>
-                    <p>Objectively innovate empowered manufactured products...</p>
-                    <div class="services-row">
-                        <div class="service-box">
-                            <i class="icon fas fa-chart-line"></i>
-                            <h3>FINANCIAL SERVICES</h3>
-                            <p>Phosfluorescently engage worldwide methodologies...</p>
-                            <button class="btn btn-primary">Read More</button>
-                        </div>
-                        <div class="service-box">
-                            <i class="icon fas fa-chart-bar"></i>
-                            <h3>BUSINESS VALUATION</h3>
-                            <p>Completely pursue scalable customer service...</p>
-                            <button class="btn btn-primary">Read More</button>
-                        </div>
-                        <div class="service-box">
-                            <i class="icon fas fa-chart-area"></i>
-                            <h3>SMALL BUSINESS TAXES</h3>
-                            <p>Collaboratively administrate turnkey channels...</p>
-                            <button class="btn btn-primary">Read More</button>
-                        </div>
-                        <div class="service-box">
-                            <i class="icon fas fa-sync-alt"></i>
-                            <h3>STARTUP COMPLIANCE</h3>
-                            <p>Seamlessly empower fully researched growth strategies...</p>
-                            <button class="btn btn-primary">Read More</button>
-                        </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <div class="working-hours">
+                        <span>MON - FRI 0900 - 1800</span>
+                        <span class="divider">|</span>
+                        <span>Email Us</span>
                     </div>
                 </div>
             </div>
-        <!-- End Services Section -->
-        
-        <!-- Details Section -->
-            <div id="index-details" class="details-section">
-                <div class="details-content">
-                    <h2>A FEW <span class="highlight">DETAILS</span> ABOUT US</h2>
-                    <h3>Dynamically innovate resource-leveling customer service</h3>
-                    <p>
-                        Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergise resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Quickly maximise timely deliverables for real-time schemas.
-                    </p>
-                    <button class="btn btn-primary">Read more about us</button>
-                </div>
-            </div>
-        <!-- End Details Section -->
-
-        <!-- Testimonial Section -->
-            <!-- Testimonial Section -->
-<div id="index-testimonial" class="testimonial-section">
-    <div class="testimonial-content text-center">
-        <h2>What <span class="highlight">Our Clients</span> Say</h2>
-        <p>Here are some of the testimonials from our satisfied clients:</p>
-    </div>
-
-    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="static/carousel/slide1.png" class="d-block w-100" alt="Testimonial 1">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="static/carousel/slide2.png" class="d-block w-100" alt="Testimonial 2">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
-            </div>
-            <!-- Add more items as needed -->
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+    </nav>
+
+    <!-- Main Carousel -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Main Navbar (fixed position within the carousel) -->
+        <nav class="navbar navbar-expand-lg navbar-light header-main-navbar">
+            <div class="container-fluid header-navbar-container">
+                <a class="navbar-brand" href="#">
+                    <img src="./static/logo/logo.png" alt="Logo" height="30">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#headerMainNavbar" aria-controls="headerMainNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="headerMainNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="carousel-inner">
+            <!-- Item 1 Carousel -->
+            <div class="carousel-item active">
+                <img src="./static/index_page/index_carousel_1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4">STRUGGLING WITH SINGAPORE'S TAX MAZE?</h1>
+                    <p>Our experts are here to guide YOU every step of the way!</p>
+                    <a href="#" class="btn btn-success btn-lg">GET STARTED</a>
+                </div>
+            </div>
+            <!-- Item 2 Carousel -->
+            <div class="carousel-item">
+                <img src="./static/index_page/index_carousel_2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4">UNLOCKING NEW OPPORTUNITIES IN SINGAPORE?</h1>
+                    <p>Tailored Accounting Solutions From Industry Experts for Local Success! </p>
+                    <a href="#" class="btn btn-success btn-lg">GET STARTED</a>
+                </div>
+            </div>
+            <!-- Item 3 Carousel -->
+            <div class="carousel-item">
+                <img src="./static/index_page/index_carousel_3.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4">COMPANY ALIGNED WITH SINGAPORE'S REGULATIONS?</h1>
+                    <p>Partner With Us for A Peace of Mind!</p>
+                    <a href="#" class="btn btn-success btn-lg">GET STARTED</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev"
+            style="z-index: 1;">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next"
+            style="z-index: 1;">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-</div>
+    <!-- Header Ends -->
 
+    <!-- Services Section -->
+    <div id="index-services" class="services-section">
+        <div class="container-fluid text-center">
+            <h2>HOW CAN <span class="highlight">PINNACLE ACCOUNTANTS</span> HELP YOU?</h2>
+            <p>Objectively innovate empowered manufactured products...</p>
+            <div class="services-row">
+                <div class="service-box">
+                    <i class="icon fas fa-chart-line"></i>
+                    <h3>COMPREHENSIVE FINANCIAL MANAGEMENT</h3>
+                    <p>Gain insights, audit integrity, and strategic leadership to drive success.</p>
+                    <button class="btn btn-primary">Read More</button>
+                </div>
+                <div class="service-box">
+                    <i class="icon fas fa-balance-scale"></i>
+                    <h3>REGULATORY COMPLIANCE AND ADVISORY</h3>
+                    <p>Ensure compliance with expert guidance on Singapore regulations.</p>
+                    <button class="btn btn-primary">Read More</button>
+                </div>
+                <div class="service-box">
+                    <i class="icon fas fa-lightbulb"></i>
+                    <h3>INNOVATIVE SOLUTIONS FOR BUSINESS GROWTH</h3>
+                    <p>Empower growth with innovative, cost-effective solutions and insights.</p>
+                    <button class="btn btn-primary">Read More</button>
+                </div>
+                <div class="service-box">
+                    <i class="icon fas fa-shield-alt"></i>
+                    <h3>RISK MANAGEMENT AND FRAUD PREVENTION</h3>
+                    <p>Protect assets with advanced fraud prevention and forensic accounting.</p>
+                    <button class="btn btn-primary">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Services Section -->
 
-  
-        <!-- stats section -->
-            <div id="index-stats" class="stats-section">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <h2 class="title">
-                        THE MOST <span class="highlight">COST-EFFECTIVE</span> FINANCE SOLUTION
-                      </h2>
+    <!-- Details Section -->
+    <div id="index-details" class="details-section">
+        <div class="details-content">
+            <h2>A FEW <span class="highlight">DETAILS</span> ABOUT US</h2>
+            <h3>Your Trusted Partner in Navigating Singapore's Financial Landscape</h3>
+            <p>
+                With over 20 years of experience, Pinnacle Accountants LLP offers unparalleled expertise in accounting,
+                taxation, and financial advisory services. Our innovative cloud solutions and in-depth understanding of
+                Singapore's regulations empower businesses to thrive. Partner with us for tailored financial strategies
+                that drive success. </p>
+            <button class="btn btn-primary">Read more about us</button>
+        </div>
+    </div>
+    <!-- End Details Section -->
+
+    <!-- Testimonial Section -->
+    <div id="index-testimonial" class="testimonial-section">
+        <div class="testimonial-content text-center">
+            <h2>What <span class="highlight">Our Clients</span> Say</h2>
+            <p>Here are some of the testimonials from our satisfied clients:</p>
+        </div>
+
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./static/index_page/testimonials/slide1.png" class="d-block w-100" alt="Testimonial 1">
+                    <div class="carousel-caption d-none d-md-block">
                     </div>
-                    <div class="col-lg-6">
-                      <div class="stats-content d-flex">
+                </div>
+                <div class="carousel-item">
+                    <img src="./static/index_page/testimonials/slide2.png" class="d-block w-100" alt="Testimonial 2">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./static/index_page/testimonials/slide3.png" class="d-block w-100" alt="Testimonial 2">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- stats section -->
+    <div id="index-stats" class="stats-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="title">
+                        THE MOST <span class="highlight"><br>COST-EFFECTIVE</span><br> FINANCE SOLUTION
+                    </h2>
+                </div>
+                <div class="col-lg-6">
+                    <div class="stats-content d-flex">
                         <div class="info-box">
-                          <h2>PROMPT AND ACCURATE VALUATIONS</h2>
-                          <hr>
-                          <p>
-                            Synergistically evolve 2.0 technologies rather than just in time initiatives. Quickly deploy strategic networks with compelling e-business.
-                            Credibly pontificate highly efficient manufactured products and enabled data.
-                            Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate.
-                          </p>
+                            <h2>STRATEGIC AND COST-EFFICIENT FINANCIAL EXPERTISE</h2>
+                            <hr>
+                            <p>
+                                Pinnacle Accountants LLP combines over two decades of industry experience with
+                                cutting-edge technology to provide cost-effective financial solutions tailored to your
+                                needs. Our strategic approach ensures compliance with Singapore's regulatory landscape
+                                while optimizing your financial operations for maximum efficiency and growth.
+                            </p>
                         </div>
                         <ul class="stats-list">
-                          <li><strong>22</strong> YEARS IN THE MARKET</li>
-                          <li><strong>6,102</strong> HAPPY CLIENTS</li>
-                          <li><strong>18</strong> ADVISORS</li>
-                          <li><strong>3,144</strong> PROJECTS</li>
+                            <li><strong>20+</strong> YEARS IN THE MARKET</li>
+                            <li><strong>5,000+</strong> HAPPY CLIENTS</li>
+                            <li><strong>25</strong> ADVISORS</li>
+                            <li><strong>3,500+</strong> PROJECTS</li>
                         </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        <!-- Footer Starts -->
-            <footer>
-                <!-- Contact Us Section -->
-                <div class="contact-us">
-                    <div class="contact-box">
-                        <i class="fas fa-clock"></i>
-                        <p>MONDAY TO FRIDAY<br>09:00 - 18:00</p>
-                    </div>
-                    <div class="contact-box">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>1 RAFFLES PLACE,<br>#23-01, SINGAPORE 048616</p>
-                    </div>
-                    <div class="contact-box">
-                        <i class="fas fa-envelope"></i>
-                        <p>E-MAIL:<br>INFO@PINNACLEACCOUNTANTS.COM</p>
-                    </div>
-                    <div class="contact-box">
-                        <i class="fas fa-phone"></i>
-                        <p>CALL US:<br>+65 6235 3535</p>
                     </div>
                 </div>
-            
-                <!-- Bottom Footer -->
-                <div class="footer-bottom">
-                    <div class="footer-section">
-                        <img src="./static/logo/logo.png" alt="PALLP Logo" class="footer-logo">
-                        <p>EXPERTING ACCOUNTING, TAILORED FOR YOUR BUDGET</p>
-                        <div class="social-icons">
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-linkedin-in"></i>
-                        </div>
-                    </div>
-                    <div class="footer-section">
-                        <h2>RECENT ARTICLES</h2>
-                        <div class="news-item">
-                            <a href="#">New Tax Regulations: What Accountants Need to Know for 2024</a>
-                            <br><small>3 days ago</small>
-                        </div>
-                        <hr>
-                        <div class="news-item">
-                            <a href="#">Transform Your Business with Cloud-Based Solutions: Key Benefits Explained</a>
-                            <br><small>5 days ago</small>
-                        </div>
-                        <hr>
-                        <div class="news-item">
-                            <a href="#">Uncovering Financial Fraud: The Growing Role of Forensic Accounting</a>
-                            <br><small>1 month ago</small>
-                        </div>
-                    </div>
-                    <div class="footer-section" id="footer-links">
-                        <h2>LINKS</h2>
-                        <p><a href="index.html">HOME</a></p>
-                        <p><a href="services.html">SERVICES</a></p>
-                        <p><a href="#">PROJECTS</a></p>
-                        <p><a href="#">BLOG</a></p>
-                        <p><a href="contact.html">CONTACT</a></p>
-                    </div>
-                    <div class="footer-section">
-                        <h2>NEWSLETTER</h2>
-                        <p>Enter your e-mail and subscribe to our newsletter</p>
-                        <input type="email" placeholder="E-mail">
-                        <button>SUBSCRIBE</button>
-                    </div>
-                </div>
-            </footer>
-        <!-- Footer Ends -->
+            </div>
+        </div>
+    </div>
+    <!-- Footer Starts -->
+    <footer>
+        <!-- Contact Us Section -->
+        <div class="contact-us">
+            <div class="contact-box">
+                <i class="fas fa-clock"></i>
+                <p>MONDAY TO FRIDAY<br>09:00 - 18:00</p>
+            </div>
+            <div class="contact-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>1 RAFFLES PLACE,<br>#23-01, SINGAPORE 048616</p>
+            </div>
+            <div class="contact-box">
+                <i class="fas fa-envelope"></i>
+                <p>E-MAIL:<br>INFO@PINNACLEACCOUNTANTS.COM</p>
+            </div>
+            <div class="contact-box">
+                <i class="fas fa-phone"></i>
+                <p>CALL US:<br>+65 6235 3535</p>
+            </div>
+        </div>
 
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+            <div class="footer-section">
+                <img src="./static/logo/logo.png" alt="PALLP Logo" class="footer-logo">
+                <p>EXPERTING ACCOUNTING, TAILORED FOR YOUR BUDGET</p>
+                <div class="social-icons">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h2>RECENT ARTICLES</h2>
+                <div class="news-item">
+                    <a href="#">New Tax Regulations: What Accountants Need to Know for 2024</a>
+                    <br><small>3 days ago</small>
+                </div>
+                <hr>
+                <div class="news-item">
+                    <a href="#">Transform Your Business with Cloud-Based Solutions: Key Benefits Explained</a>
+                    <br><small>5 days ago</small>
+                </div>
+                <hr>
+                <div class="news-item">
+                    <a href="#">Uncovering Financial Fraud: The Growing Role of Forensic Accounting</a>
+                    <br><small>1 month ago</small>
+                </div>
+            </div>
+            <div class="footer-section" id="footer-links">
+                <h2>LINKS</h2>
+                <p><a href="index.html">HOME</a></p>
+                <p><a href="services.html">SERVICES</a></p>
+                <p><a href="#">PROJECTS</a></p>
+                <p><a href="#">BLOG</a></p>
+                <p><a href="contact.html">CONTACT</a></p>
+            </div>
+            <div class="footer-section">
+                <h2>NEWSLETTER</h2>
+                <p>Enter your e-mail and subscribe to our newsletter</p>
+                <input type="email" placeholder="E-mail">
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
