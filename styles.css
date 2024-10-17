@@ -8,13 +8,23 @@ body {
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, nav, footer {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+nav,
+footer {
     font-family: 'Source Sans 3', sans-serif;
-    
+
 }
 
 /* Header CSS Start */
@@ -32,7 +42,7 @@ h1, h2, h3, h4, h5, h6, p, a, nav, footer {
 .working-hours {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
     color: black;
 }
 
@@ -61,7 +71,7 @@ h1, h2, h3, h4, h5, h6, p, a, nav, footer {
     color: #007bff;
 }
 
-.contact-info i + i {
+.contact-info i+i {
     margin-left: 15px;
 }
 
@@ -118,7 +128,7 @@ h1, h2, h3, h4, h5, h6, p, a, nav, footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.5); 
+    background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
 }
 
@@ -146,19 +156,15 @@ h1, h2, h3, h4, h5, h6, p, a, nav, footer {
     border-radius: 50%;
 }
 
-
-
 /* Header CSS Ends */
 
 /* Header for contact and services*/
-/* Carousel Image Container */
-/* Custom Main Navbar for Services and Contact Pages */
 .custom-main-navbar {
     position: absolute;
     top: 2%;
     left: 5%;
     right: 5%;
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.8);
     z-index: 1000;
     padding: 10px;
     border-radius: 5px;
@@ -194,7 +200,7 @@ h1, h2, h3, h4, h5, h6, p, a, nav, footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-color: rgba(0, 0, 0, 0.2); 
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .carousel-text {
@@ -204,7 +210,7 @@ h1, h2, h3, h4, h5, h6, p, a, nav, footer {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    background: rgba(0, 0, 0, 0.75); 
+    background: rgba(0, 0, 0, 0.75);
     padding: 20px;
     border-radius: 50px;
 }
@@ -306,20 +312,22 @@ footer {
     margin-bottom: 20px;
 }
 
-.news-item a, .footer-section a {
+.news-item a,
+.footer-section a {
     color: #333333;
     text-decoration: none;
     font-weight: 600;
 }
 
-.news-item a:hover, .footer-section a:hover {
+.news-item a:hover,
+.footer-section a:hover {
     text-decoration: underline;
 }
 
 #footer-links a {
-    font-weight: normal; 
-    color: #333333; 
-    text-decoration: none; 
+    font-weight: normal;
+    color: #333333;
+    text-decoration: none;
 }
 
 #footer-links a:hover {
@@ -395,12 +403,12 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 2.5%; 
+    margin: 0 2.5%;
 }
 
 .service-box {
     background-color: #fff;
-    max-width:fit-content;
+    max-width: fit-content;
     max-height: fit-content;
     column-gap: 4vw;
     padding: 22px 10px;
@@ -408,7 +416,7 @@ hr {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     flex: 1;
-    margin: 0 1.5%; 
+    margin: 0 1.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -497,7 +505,7 @@ hr {
     margin-bottom: 20px;
 }
 
-.details-content p  {
+.details-content p {
     font-size: 21px;
     color: #666;
     margin-bottom: 30px;
@@ -524,16 +532,16 @@ hr {
 /* Testimonial Section Styles */
 #index-testimonial {
     padding: 60px 5vw;
-    background-color: #f8f9fa; 
-  }
-  
+    background-color: #f8f9fa;
+}
+
 .testimonial-content h2 {
     font-size: 54px;
     font-weight: 700;
     color: #333;
     margin-bottom: 10px;
-  }
-  
+}
+
 .testimonial-content .highlight {
     color: #007bff;
 }
@@ -543,10 +551,11 @@ hr {
     color: #666;
     /* margin-bottom: 20px; */
     text-align: center;
-  }
-  
-  #testimonialCarousel .carousel-item {
-    height: auto; /* Set height as needed */
+}
+
+#testimonialCarousel .carousel-item {
+    height: auto;
+    /* Set height as needed */
     background-size: cover;
     background-position: center;
 }
@@ -555,73 +564,73 @@ hr {
     width: 100%;
     height: auto;
 }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     background-color: transparent;
     border-radius: 50%;
-  }
-  
-  /* Stats section */
-  #index-stats {
+}
+
+/* Stats section */
+#index-stats {
     position: relative;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)), url('./static/index_page/cost-effective.jpg');
     background-size: cover;
     background-position: center;
     color: #333;
     padding: 60px 0;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-  
-  .title {
+
+.title {
     font-size: 54px;
     font-weight: 700;
     color: #000000;
     text-align: center;
     margin-left: 5vw;
-  }
-  
-  .highlight {
+}
+
+.highlight {
     color: #007bff;
-  }
-  
-  .stats-content {
+}
+
+.stats-content {
     display: flex;
     background-color: rgba(0, 123, 255, 0.75);
     border-radius: 10px;
     overflow: hidden;
     margin-right: 5vw;
-  }
-  
-  .info-box {
+}
+
+.info-box {
     flex: 2;
     padding: 20px;
     color: #fff;
-  }
-  
-  .info-box h2 {
+}
+
+.info-box h2 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
-  }
-  
-  .info-box hr {
+}
+
+.info-box hr {
     border: 0;
     border-top: 1px solid #fff;
     margin: 10px 0;
-  }
-  
-  .info-box p {
+}
+
+.info-box p {
     font-size: 21px;
     color: #ffffff;
     margin: 10px;
     text-align: center;
-  }
-  
-  .stats-list {
+}
+
+.stats-list {
     margin: 10px;
     border-radius: 10px;
     background-color: #007bff;
@@ -632,18 +641,19 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  
-  .stats-list li {
+}
+
+.stats-list li {
     margin: 10px 0;
     font-size: 1.2rem;
     border-bottom: 1px solid #fff;
-  }
-  
-  .stats-list strong {
+}
+
+.stats-list strong {
     display: block;
     font-size: 1.5rem;
-  }  
+}
+
 /* Stats Section End */
 
 /* Services Start */
@@ -730,12 +740,12 @@ hr {
 }
 
 /* Accordion Start */
-.cloud-app-mockup{
+.cloud-app-mockup {
     align-items: center;
     margin: 2.5vh 5vw 2.5vh 5vw;
 }
 
-.cloud-app-mockup img{
+.cloud-app-mockup img {
     max-width: 100%;
     height: auto;
 }
@@ -794,6 +804,7 @@ hr {
     padding: 20px;
     text-align: justify;
 }
+
 /* Services CSS Ends*/
 
 /* Contact CSS */
@@ -820,7 +831,7 @@ hr {
 #contact-card .services-card-icon {
     font-size: 40px;
     margin-bottom: 30px;
-    color: #333; 
+    color: #333;
 }
 
 #contact-card .services-card-h3 {
@@ -871,7 +882,7 @@ hr {
     text-align: center;
 }
 
-.form-highlight{
+.form-highlight {
     color: red;
 }
 
@@ -912,5 +923,3 @@ hr {
         width: 100%;
     }
 }
-
-
